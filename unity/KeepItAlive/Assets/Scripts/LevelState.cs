@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelState : MonoBehaviour
 {
+    public GameObject level;
     public float pathSpeed = 1.0f;    // distance along path per second
     public float pathDistance = 0.0f;
     

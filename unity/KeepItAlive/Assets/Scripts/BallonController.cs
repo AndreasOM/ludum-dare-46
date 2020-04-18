@@ -18,7 +18,8 @@ public class BallonController : MonoBehaviour
         
         // :TODO: add check for misconfiguration
 
-        ballon = GameObject.Instantiate(ballonPrefab, Vector3.zero, Quaternion.identity, gameObject.transform);
+        Quaternion rot = transform.rotation;
+        ballon = GameObject.Instantiate(ballonPrefab, Vector3.zero, rot, gameObject.transform);
     }
 
     // Update is called once per frame

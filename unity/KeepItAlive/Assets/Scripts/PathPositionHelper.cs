@@ -48,6 +48,8 @@ public class PathPositionHelper : MonoBehaviour
 
         }
 
+        v = transform.rotation * v;
+
         return v;
     }
 }
