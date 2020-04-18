@@ -6,7 +6,7 @@ so doctor said to take it slow,
 and don't talk to much.
 
 ## Status
-Creating a prototype level
+Create player, and add collider
 
 
 
@@ -58,3 +58,5 @@ https://github.com/AndreasOM/ludum-dare-46
 13:10 - Started with prototype level layput in blender
 14:00 - Got blender file importing as level in unity
 15:00 - Path is almost working
+16:00 - Balloon is moving along path with camera following
+

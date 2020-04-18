@@ -27,6 +27,7 @@ public class BallonController : MonoBehaviour
 //        Debug.Log( "BallonController got LevelState pathDistance:"+levelState.pathDistance );
         float d = _levelState.pathDistance;
         Vector3 pos = _pathPositionHelper.getPosition(d);
-        ballon.transform.position = pos;
+//        ballon.transform.position = pos;
+        gameObject.transform.position = pos;    // we move ourselves!
     }
 }
