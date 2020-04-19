@@ -21,11 +21,11 @@ https://github.com/AndreasOM/ludum-dare-46
 - [ ] Do I really want to do this in Unity?
 
 ## TODO
-- [ ] Add success screen
 
-- [ ] Create clean Intro screen
-- [ ] Create clean Failure screen
-- [ ] Create clean Success screen
+- [ ] Add more enemies
+- [ ] Add some basic level model
+- [ ] Add SFX
+- [ ] Create music
 
 ## DONE
 - [x] Improve balloon movement
@@ -33,6 +33,10 @@ https://github.com/AndreasOM/ludum-dare-46
 - [x] Add lifetime to projectiles
 - [x] Add failure screen
 - [x] Intro/Tutorial screen
+- [x] Add success screen
+- [x] Create clean Intro screen
+- [x] Create clean Failure screen
+- [x] Create clean Success screen
 
 
 ## Log
@@ -61,6 +65,7 @@ https://github.com/AndreasOM/ludum-dare-46
 13:00 - Start again
 15:30 - Balloon movement is much better, still no health
 18:30 - Some game loop working
+22:00 - We have kind of a playable game. Enough.
 
 ## Ideation
 

@@ -17,6 +17,7 @@ public class LevelState : MonoBehaviour
     public GameObject level;
     public float pathSpeed = 1.0f;    // distance along path per second
     public float pathDistance = 0.0f;
+    public float balloonSpeed = 1.0f;
     public uint maxHealth = 1000;
     public uint currentHealth = 1000;
     public bool isGameRunning = false;
@@ -138,5 +139,10 @@ public class LevelState : MonoBehaviour
         currentHealth = (uint)Mathf.Clamp((int)currentHealth - damage, 0, maxHealth);
 
         return currentHealth;
+    }
+
+    public void onBalloonReachedEnd()
+    {
+        gotoState( State.Success );
     }
 }

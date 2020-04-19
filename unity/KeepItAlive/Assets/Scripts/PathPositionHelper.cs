@@ -19,6 +19,10 @@ public class PathPositionHelper : MonoBehaviour
         
     }
 
+    public bool isNearOrAfterEnd(float distance)
+    {
+        return distance+5 > path.sharedMesh.vertices.Length;
+    }
     public Vector3 getPosition(float distance)
     {
         Vector3 v;

@@ -37,6 +37,7 @@ public class BallonController : MonoBehaviour
         {
             return;
         }
+
         
 //        Debug.Log( "BallonController got LevelState pathDistance:"+levelState.pathDistance );
         Vector3 oldPos = ballon.transform.position;    // where the ballon is
@@ -45,6 +46,12 @@ public class BallonController : MonoBehaviour
         Vector3 closestPos = _pathPositionHelper.getPosition(closestD);
         Debug.DrawLine(oldPos, closestPos, Color.yellow);
         Debug.DrawLine(closestPos, closestPos+1.0f*Vector3.up, Color.yellow);
+        
+        if (_pathPositionHelper.isNearOrAfterEnd(closestD))
+        {
+            _levelState.onBalloonReachedEnd();
+            return;
+        }
         
         float wantD = _levelState.pathDistance;    // this is where we _should_ be under perfect conditions
         Vector3 wantPos = _pathPositionHelper.getPosition(wantD);    // where we want it to be
@@ -64,7 +71,7 @@ public class BallonController : MonoBehaviour
         // NO! // ballon.transform.position = pos;    // we move the ballon
         Vector3 delta = pos - oldPos;
         delta.y = 0.0f;    // do not add y-velocity, and keep x/z-velocity fixed
-        delta = 1.0f * delta.normalized;
+        delta = _levelState.balloonSpeed * delta.normalized;
 
         // enforce height from path!
         Vector3 hardY = ballon.transform.position;
@@ -73,5 +80,16 @@ public class BallonController : MonoBehaviour
         
         Debug.DrawLine(oldPos,oldPos+delta,Color.green);
         _rigidbody.velocity = delta;
+    }
+    public void StartGame()
+    {
+        Debug.Log( "BallonController::StartGame" );
+        
+        Quaternion rot = transform.rotation;
+        _distance = 0.0f;
+        Vector3 pos = _pathPositionHelper.getPosition(0.0f);    // start
+        
+        ballon.transform.position = pos;
+        ballon.transform.rotation = rot;
     }
 }

@@ -5,16 +5,13 @@ using UnityEngine.UI;
 
 public class UIScreenController : MonoBehaviour
 {
-    
-    public Image image;
-    public Sprite introSprite;
-    public Sprite successSprite;
-    public Sprite failureSprite;
-    
+    public GameObject intro;
+    public GameObject success;
+    public GameObject failure;
     // Start is called before the first frame update
     void Start()
     {
-        image.gameObject.SetActive( false );
+        hide();
     }
 
     // Update is called once per frame
@@ -25,21 +22,20 @@ public class UIScreenController : MonoBehaviour
 
     public void hide()
     {
-        image.gameObject.SetActive(false);
+        intro.gameObject.SetActive(false);
+        success.gameObject.SetActive(false);
+        failure.gameObject.SetActive(false);
     }
     public void showIntro()
     {
-        image.sprite = introSprite;
-        image.gameObject.SetActive(true);
+        intro.gameObject.SetActive(true);
     }
     public void showFailure()
     {
-        image.sprite = failureSprite;
-        image.gameObject.SetActive(true);
+        failure.gameObject.SetActive(true);
     }
     public void showSuccess()
     {
-        image.sprite = successSprite;
-        image.gameObject.SetActive(true);
+        success.gameObject.SetActive(true);
     }
 }

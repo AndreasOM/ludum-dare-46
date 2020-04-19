@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b8dc8d75dde4810bb4a180801b0d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterObject: {fileID: 264863383853453622, guid: cd96afec0ba134bdb85be983b332f895,
+  waterObject: {fileID: 8927511966336584639, guid: b7257b267b67147a6b1b380ec07964cd,
     type: 3}
   emitterObject: {fileID: 2571416230947919203}
   initialSpeed: {x: 0, y: 10, z: 0}
