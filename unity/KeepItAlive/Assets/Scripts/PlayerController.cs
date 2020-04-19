@@ -27,9 +27,18 @@ public class PlayerController : MonoBehaviour
         
         Vector3 move = Time.deltaTime*new Vector3( 0, 0, f );
         move = rot * move;
-    
+
+        Vector3 gravity = Vector3.zero;
+        if (!_controller.isGrounded)
+        {
+            gravity = Physics.gravity * Time.deltaTime; // ^2 ?
+        }
+
+        move.y = gravity.y;
+        
 //        Vector3 move = new Vector3(-Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         _controller.Move(move);
 //        transform.up = move;
+
     }
 }

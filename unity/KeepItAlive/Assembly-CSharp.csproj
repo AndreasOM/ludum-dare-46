@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\BallonController.cs" />
      <Compile Include="Assets\Scripts\EnemyDebugger.cs" />
      <Compile Include="Assets\Scripts\EnemyHoseController.cs" />
+     <Compile Include="Assets\Scripts\HealthbarController.cs" />
      <Compile Include="Assets\Scripts\LevelState.cs" />
      <Compile Include="Assets\Scripts\PathDebugRenderer.cs" />
      <Compile Include="Assets\Scripts\PathPositionHelper.cs" />

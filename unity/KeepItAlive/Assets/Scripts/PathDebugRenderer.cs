@@ -17,8 +17,9 @@ public class PathDebugRenderer : MonoBehaviour
             foreach (var v in vertices)
             {
 //                Debug.Log( "v" + v );
-                Vector3 pos = v;
-                Quaternion rot = Quaternion.identity;
+//                Quaternion rot = Quaternion.identity;
+                Quaternion rot = transform.rotation;              
+                Vector3 pos = rot * v;
                 GameObject.Instantiate(visual, pos, rot, gameObject.transform);
             }
         }

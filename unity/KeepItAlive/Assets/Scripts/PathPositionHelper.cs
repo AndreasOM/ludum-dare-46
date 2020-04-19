@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Comparers;
 
 public class PathPositionHelper : MonoBehaviour
 {
@@ -51,5 +52,29 @@ public class PathPositionHelper : MonoBehaviour
         v = transform.rotation * v;
 
         return v;
+    }
+
+    public float getClosestDistance(Vector3 position)
+    {
+        Quaternion rot = transform.rotation;              
+        
+        float minDistance = float.MaxValue;
+        float d = 0.0f;
+        float bestD = 0.0f;
+        foreach (Vector3 v in path.sharedMesh.vertices)
+        {
+            Vector3 pos = rot * v;    // argl, :TODO: unrotate input
+            
+            float distance = Vector3.Distance(position, pos);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                bestD = d;
+            }
+
+            d += 1.0f;
+        }
+
+        return bestD;
     }
 }

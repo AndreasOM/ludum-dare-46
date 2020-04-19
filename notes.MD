@@ -6,8 +6,10 @@ so doctor said to take it slow,
 and don't talk to much.
 
 ## Status
-Create player, and add collider
-
+This might be beyond repair.
+"Kill this right now!"
+But it's a game jam, so it's about the learning.
+So let's keep digging the hole deeper.
 
 
 ## Repository
@@ -18,25 +20,14 @@ https://github.com/AndreasOM/ludum-dare-46
 ## Open Questions
 - [ ] Do I really want to do this in Unity?
 
+## TODO
+- [ ] Add health to Balloon
+- [ ] Add failure
+- [ ] Add success
+- [ ] Intro/Tutorial screen
 
-## Ideation
-
-- Keep your house plants alive.
-	- Where is the "it".
-- Keep I T alive.
-- Stephen King ... IT?!
-	- Red ballon ... vs the clowns
-	- Red ballon saved by the clowns
-		- Reverse tower attack?
-		- Rerunner with upgrade mechanics?
-
-- .it => Italy
-	- Keep Italy alive?
-
-- Keep the planet alive?
-- Keeping it alive by "just doing it"?
-- Tamag...chi
-- Keep a fire alive?
+## DONE
+- [x] Improve balloon movement
 
 
 ## Log
@@ -59,4 +50,28 @@ https://github.com/AndreasOM/ludum-dare-46
 14:00 - Got blender file importing as level in unity
 15:00 - Path is almost working
 16:00 - Balloon is moving along path with camera following
+
+### Sunday
+
+13:00 - Start again
+15:30 - Balloon movement is much better, still no health
+
+## Ideation
+
+- Keep your house plants alive.
+	- Where is the "it".
+- Keep I T alive.
+- Stephen King ... IT?!
+	- Red ballon ... vs the clowns
+	- Red ballon saved by the clowns
+		- Reverse tower attack?
+		- Rerunner with upgrade mechanics?
+
+- .it => Italy
+	- Keep Italy alive?
+
+- Keep the planet alive?
+- Keeping it alive by "just doing it"?
+- Tamag...chi
+- Keep a fire alive?
 
