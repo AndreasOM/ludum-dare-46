@@ -59,14 +59,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallonController.cs" />
+     <Compile Include="Assets\Scripts\BalloonCollisionHandler.cs" />
      <Compile Include="Assets\Scripts\EnemyDebugger.cs" />
      <Compile Include="Assets\Scripts\EnemyHoseController.cs" />
      <Compile Include="Assets\Scripts\HealthbarController.cs" />
      <Compile Include="Assets\Scripts\LevelState.cs" />
+     <Compile Include="Assets\Scripts\ObjectLifetimeController.cs" />
      <Compile Include="Assets\Scripts\PathDebugRenderer.cs" />
      <Compile Include="Assets\Scripts\PathPositionHelper.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ProjectileData.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\UIScreenController.cs" />
      <Compile Include="Assets\UnityPackages\JsonNetSample\JsonNetSample.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/anti/data/work/anti666tv/ludum-dare-46/unity/KeepItAlive/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -115,6 +119,9 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/anti/data/work/anti666tv/ludum-dare-46/unity/KeepItAlive/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>/Users/anti/data/work/anti666tv/ludum-dare-46/unity/KeepItAlive/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Editors/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -8,9 +8,15 @@ public class PlayerController : MonoBehaviour
     public float Speed = 1.0f;
     public float AngularSpeed = 2.0f;    // deg per sec
     private CharacterController _controller;
+
+    private Vector3 _initialPosition;
+    private Quaternion _initialRotation;
     // Start is called before the first frame update
     void Start()
     {
+        _initialPosition = transform.position;
+        _initialRotation = transform.rotation;
+        
         _controller = GetComponent<CharacterController>();
     }
 
@@ -39,6 +45,12 @@ public class PlayerController : MonoBehaviour
 //        Vector3 move = new Vector3(-Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         _controller.Move(move);
 //        transform.up = move;
+    }
 
+    public void StartGame()
+    {
+        Debug.Log( "PlayerController::StartGame" );
+        gameObject.transform.position = _initialPosition;
+        gameObject.transform.rotation = _initialRotation;
     }
 }

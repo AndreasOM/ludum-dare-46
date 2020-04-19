@@ -33,6 +33,11 @@ public class BallonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!_levelState.isGameRunning)
+        {
+            return;
+        }
+        
 //        Debug.Log( "BallonController got LevelState pathDistance:"+levelState.pathDistance );
         Vector3 oldPos = ballon.transform.position;    // where the ballon is
         
