@@ -22,7 +22,11 @@ public class BalloonCollisionHandler : MonoBehaviour
             
 //            Debug.Log("Balloon collision damage "+pd.damage);
             _levelState.onBalloonDamage(pd.damage);
-            Destroy( other.gameObject );
+            if (pd.destroyAfterDamage)
+            {
+                Destroy(other.gameObject);
+            }
+
             if (projectileCollisionParticleSystem)
             {
                 ContactPoint cp = other.GetContact(0);

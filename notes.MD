@@ -6,10 +6,7 @@ so doctor said to take it slow,
 and don't talk to much.
 
 ## Status
-This might be beyond repair.
-"Kill this right now!"
-But it's a game jam, so it's about the learning.
-So let's keep digging the hole deeper.
+Bonus: Lets do some tiny extras.
 
 
 ## Repository
@@ -22,9 +19,10 @@ https://github.com/AndreasOM/ludum-dare-46
 
 ## TODO
 
-- [ ] Add more enemies
-- [ ] Add some basic level model
+- [ ] Fix the respawn logic
 - [ ] Add SFX
+
+- [ ] Add some basic level model
 - [ ] Create music
 
 ## DONE
@@ -37,6 +35,7 @@ https://github.com/AndreasOM/ludum-dare-46
 - [x] Create clean Intro screen
 - [x] Create clean Failure screen
 - [x] Create clean Success screen
+- [x] Add more enemies
 
 
 ## Log
@@ -66,6 +65,10 @@ https://github.com/AndreasOM/ludum-dare-46
 15:30 - Balloon movement is much better, still no health
 18:30 - Some game loop working
 22:00 - We have kind of a playable game. Enough.
+
+### Monday
+18:00 - Bonus: Starting some tiny cleanups
+19:45 - Pendulum is chopping balloon really nicely
 
 ## Ideation
 

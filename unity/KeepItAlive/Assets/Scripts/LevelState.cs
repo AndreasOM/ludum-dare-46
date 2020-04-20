@@ -23,6 +23,8 @@ public class LevelState : MonoBehaviour
     public bool isGameRunning = false;
     public float inputDelay = 3.0f;
 
+    public bool disableDamage = false;
+
     public UIScreenController uiScreenController;
     private bool _wasGameRunning = false;
     private bool _waitingForInput = false;
@@ -136,7 +138,10 @@ public class LevelState : MonoBehaviour
 
     public uint onBalloonDamage(uint damage)
     {
-        currentHealth = (uint)Mathf.Clamp((int)currentHealth - damage, 0, maxHealth);
+        if (!disableDamage)
+        {
+            currentHealth = (uint) Mathf.Clamp((int) currentHealth - damage, 0, maxHealth);
+        }
 
         return currentHealth;
     }
