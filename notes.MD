@@ -12,6 +12,8 @@ Bonus: Lets do some tiny extras.
 ## Repository
 https://github.com/AndreasOM/ludum-dare-46
 
+https://ldjam.com/events/ludum-dare/46/keep-it-alive-14
+
 ## Scratchpad
 
 ## Open Questions
@@ -19,7 +21,7 @@ https://github.com/AndreasOM/ludum-dare-46
 
 ## TODO
 
-- [ ] Fix the respawn logic
+- [ ] Fix texts "safe -> alive"
 - [ ] Add SFX
 
 - [ ] Add some basic level model
@@ -36,6 +38,7 @@ https://github.com/AndreasOM/ludum-dare-46
 - [x] Create clean Failure screen
 - [x] Create clean Success screen
 - [x] Add more enemies
+- [x] Fix the respawn logic
 
 
 ## Log

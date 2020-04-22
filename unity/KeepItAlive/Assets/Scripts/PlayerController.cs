@@ -49,8 +49,11 @@ public class PlayerController : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log( "PlayerController::StartGame" );
+        Debug.Log( "PlayerController::StartGame "+_initialPosition.x+","+_initialPosition.y+","+_initialPosition.z );
+        CharacterController cc = gameObject.GetComponent<CharacterController>();
+        cc.enabled = false;
         gameObject.transform.position = _initialPosition;
         gameObject.transform.rotation = _initialRotation;
+        cc.enabled = true;
     }
 }

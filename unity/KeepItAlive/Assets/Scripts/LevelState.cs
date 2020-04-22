@@ -123,6 +123,10 @@ public class LevelState : MonoBehaviour
 
         if (isGameRunning)
         {
+            if (Input.GetKeyUp("r"))
+            {
+                currentHealth = 0;
+            }
             if (currentHealth <= 0)
             {
                 gotoState( State.Failure );
