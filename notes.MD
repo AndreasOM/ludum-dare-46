@@ -21,7 +21,7 @@ https://ldjam.com/events/ludum-dare/46/keep-it-alive-14
 
 ## TODO
 
-- [ ] Fix texts "safe -> alive"
+- [ ] Add pendulum shove
 - [ ] Add SFX
 
 - [ ] Add some basic level model
@@ -39,6 +39,7 @@ https://ldjam.com/events/ludum-dare/46/keep-it-alive-14
 - [x] Create clean Success screen
 - [x] Add more enemies
 - [x] Fix the respawn logic
+- [x] Fix texts "safe -> alive"
 
 
 ## Log

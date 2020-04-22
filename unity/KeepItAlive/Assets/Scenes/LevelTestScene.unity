@@ -617,7 +617,7 @@ MonoBehaviour:
   maxHealth: 1000
   currentHealth: 1000
   isGameRunning: 0
-  inputDelay: 3
+  inputDelay: 1
   disableDamage: 0
   uiScreenController: {fileID: 1644667290}
   _inputWaitTime: 0
@@ -773,7 +773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624804916}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: -0.00000047683716, y: 5.6304154, z: 0.7737177}
+  m_LocalPosition: {x: -0.00000023841858, y: 5.6304154, z: 0.7737177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1117489816}
@@ -2382,7 +2382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708190743}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: -0.00000047683716, y: 5.6304154, z: 0.7737177}
+  m_LocalPosition: {x: -0.00000023841858, y: 5.6304154, z: 0.7737177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3035,6 +3035,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 225323966521659163, guid: d7a73e657d30b4df59f68cb75f6dbe01,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7a73e657d30b4df59f68cb75f6dbe01, type: 3}
 --- !u!1001 &750628846411753434
@@ -3162,8 +3167,12 @@ PrefabInstance:
     - target: {fileID: 8026204217540657881, guid: 55b9637440ee04829a230d185a175e88,
         type: 3}
       propertyPath: m_text
-      value: This didn't go as planned. You didn't keep IT safe. Tomorrow is a new
-        day. Try again.
+      value: 'This didn''t go as planned.
+
+        You didn''t keep IT alive.
+
+        Tomorrow
+        is a new day. Try again...'
       objectReference: {fileID: 0}
     - target: {fileID: 8026204217540657881, guid: 55b9637440ee04829a230d185a175e88,
         type: 3}
@@ -3292,13 +3301,17 @@ PrefabInstance:
     - target: {fileID: 7531892571633166830, guid: 87db7b9d6f3344a2abd340715174ff92,
         type: 3}
       propertyPath: m_text
-      value: You made it. You keept IT safe all the way. Now enjoy watching your
-        balloon roam the sky.
+      value: 'You made it.
+
+        You keept IT alive all the way.
+
+        Now
+        enjoy watching your balloon roam the sky.'
       objectReference: {fileID: 0}
     - target: {fileID: 7531892571633166830, guid: 87db7b9d6f3344a2abd340715174ff92,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 89
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7531892571633166830, guid: 87db7b9d6f3344a2abd340715174ff92,
         type: 3}
@@ -3313,7 +3326,7 @@ PrefabInstance:
     - target: {fileID: 7531892571633166830, guid: 87db7b9d6f3344a2abd340715174ff92,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8370183506697738246, guid: 87db7b9d6f3344a2abd340715174ff92,
         type: 3}
@@ -3453,6 +3466,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1644667289}
     m_Modifications:
+    - target: {fileID: 7481085599145477359, guid: 731ef99d79a68487cb96308523b79d23,
+        type: 3}
+      propertyPath: m_text
+      value: "It is a beautiful day, and all you want to do is to go outside, and
+        play with your balloon.But these stupid kids trapped the way out. \nYou might
+        be immortal,\nbut your balloon is not.\nKeep IT alive!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481085599145477359, guid: 731ef99d79a68487cb96308523b79d23,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 197
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481085599145477359, guid: 731ef99d79a68487cb96308523b79d23,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481085599145477359, guid: 731ef99d79a68487cb96308523b79d23,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481085599145477359, guid: 731ef99d79a68487cb96308523b79d23,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7481085599479562137, guid: 731ef99d79a68487cb96308523b79d23,
         type: 3}
       propertyPath: m_LocalPosition.x
