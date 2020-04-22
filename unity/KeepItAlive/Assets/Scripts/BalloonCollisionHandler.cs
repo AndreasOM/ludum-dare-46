@@ -16,7 +16,10 @@ public class BalloonCollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Projectile")
+        if (
+            other.gameObject.CompareTag( "Projectile" )
+            || other.gameObject.CompareTag( "Trap" )
+            )
         {
             ProjectileData pd = other.gameObject.GetComponent<ProjectileData>();
             
@@ -25,6 +28,12 @@ public class BalloonCollisionHandler : MonoBehaviour
             if (pd.destroyAfterDamage)
             {
                 Destroy(other.gameObject);
+            }
+
+            AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot( audioSource.clip );
             }
 
             if (projectileCollisionParticleSystem)

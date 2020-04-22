@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Cinemachine.Utility;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -45,6 +46,23 @@ public class PlayerController : MonoBehaviour
 //        Vector3 move = new Vector3(-Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         _controller.Move(move);
 //        transform.up = move;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        // curently not called!
+        Debug.Log("PlayerController::OnCollisionEnter");
+        if (other.gameObject.CompareTag( "Trap" ))
+        {
+            ProjectileData pd = other.gameObject.GetComponent<ProjectileData>();
+            if (pd.playerShove > 0.0f)
+            {
+                Vector3 delta = transform.position - other.transform.position;
+                delta.ProjectOntoPlane( Vector3.up );
+                delta.Normalize();
+                _controller.Move(pd.playerShove * delta);
+            }
+        }
     }
 
     public void StartGame()
